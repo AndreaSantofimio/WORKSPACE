@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Inventario - Página de Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            background-color: #E3ECF5;
+            color: #0a0a0a;
+        }
+        /* Navbar del primer diseño */
+        .navbar {
+            background-color: #A3B8D9;
+            border-bottom: 2px solid #DDE3EC;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #5A7493;
+        }
+        .divider {
+            height: 40px;
+            width: 2px;
+            background-color: #DDE3EC;
+            margin: 0 15px;
+        }
+        .btn-custom {
+            background-color: #5A7493;
+            color: white;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #49607a;
+        }
+        h1, h2, h3 {
+            color: #36454F;
+        }
+        /* Hero principal */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://via.placeholder.com/1920x700?text=Sistema+de+Inventario+Moderno') center/cover no-repeat;
+            color: white;
+            padding: 150px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        /* Tarjetas de beneficios */
+        .beneficio-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .beneficio-card i {
+            font-size: 2.5rem;
+            color: #5A7493;
+            margin-bottom: 10px;
+        }
+        /* Equipo */
+        .team-member img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
+        /* Footer */
+        footer {
+            background-color: #A3B8D9;
+            color: white;
+            padding: 40px 0;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- Navbar combinada -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand fw-bold text-white" href="#">Sistema de Inventario</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Ayuda</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sobre nosotros</a></li>
+            </ul>
+            <div class="divider"></div>
+            <div class="d-flex">
+                <a href="#" class="btn btn-custom me-2">Inicio de Sesión</a>
+                <a href="#" class="btn btn-custom">Registrarse</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Hero -->
+<section class="hero">
+    <h1>Controla tu inventario de forma inteligente</h1>
+    <p>Organiza, gestiona y crece tu negocio con nuestra plataforma</p>
+    <a href="#" class="btn btn-custom btn-lg">Comenzar ahora</a>
+</section>
+
+
+<!-- Beneficios -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Beneficios</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="beneficio-card">
+                    <i class="bi bi-bar-chart-line-fill"></i>
+                    <h5>Reportes en tiempo real</h5>
+                    <p>Obtén información clara sobre tus ventas e inventario.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="beneficio-card">
+                    <i class="bi bi-bell-fill"></i>
+                    <h5>Alertas automáticas</h5>
+                    <p>Recibe avisos cuando tu stock esté por agotarse.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="beneficio-card">
+                    <i class="bi bi-people-fill"></i>
+                    <h5>Multiusuario</h5>
+                    <p>Comparte el control del inventario con tu equipo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Carrusel de testimonios -->
+<div id="testimoniosCarousel" class="carousel slide py-5 bg-light" data-bs-ride="carousel">
+    <div class="container">
+        <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+                <h5>"Gracias a Sistema de Inventario, redujimos pérdidas y optimizamos ventas"</h5>
+                <p>- Juan López, Tienda XYZ</p>
+            </div>
+            <div class="carousel-item">
+                <h5>"La interfaz es simple y me avisa cuando debo reabastecer"</h5>
+                <p>- María García, Emprendedora</p>
+            </div>
+            <div class="carousel-item">
+                <h5>"Puedo ver todo desde mi celular en cualquier momento"</h5>
+                <p>- Carlos Pérez, Distribuidor</p>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</div>
+
+
+<!-- Equipo -->
+<!-- Equipo -->
+<section class="py-5">
+    <div class="container text-center">
+        <h2>Conoce a nuestro equipo</h2>
+        <div class="row mt-4 justify-content-center">
+            <div class="col-md-4 team-member">
+                <img src="Captura.PNG" alt="Miembro 1">
+                <h6>Maria Camila Uribe</h6>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="Captura1.PNG" alt="Miembro 2">
+                <h6>Santiago Taborda Garcia</h6>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="Captura2.PNG" alt="Miembro 3">
+                <h6>Andrea Santofimio Cruz</h6>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h6>Sistema de Inventario</h6>
+                <p>La mejor solución para tu control de inventario.</p>
+            </div>
+            <div class="col-md-4">
+                <h6>Enlaces</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h6>Contacto</h6>
+                <p>Email: info@Sistemadeinventario.com</p>
+                <p>Tel: +57 300 123 4567</p>
+            </div>
+        </div>
+        <hr>
+        <p class="text-center mb-0">&copy; 2025 Sistema de Inventario- Todos los derechos reservados</p>
+    </div>
+</footer>
+</body>
+</html>
+
+
